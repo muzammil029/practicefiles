@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Table,D-Flex,D-Inline-Flex,Visibility,D-Print,Position</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h4 class="text-secondary">d-table</h4>
+    <div class="d-table">
+        <div class="d-table-row">
+            <div class="d-table-cell bg-info" style="padding: 10px">Rex</div>
+            <div class="d-table-cell bg-info" style="padding: 10px">Dolores</div>
+            <div class="d-table-cell bg-info" style="padding: 10px">Bubbles</div>
+        </div>
+        <div class="d-table-row">
+            <div class="d-table-cell bg-info" style="padding: 10px">Fred</div>
+            <div class="d-table-cell bg-info" style="padding: 10px">Rivet</div>
+            <div class="d-table-cell bg-info" style="padding: 10px">Cosmo</div>
+        </div>
+    </div>
+    <hr>
+    <h4 class="text-secondary d-flex">d-flex</h4>
+    <div class="d-flex">
+        <div style="width: 150px">Rex</div>
+        <div style="width: 150px">Dolores</div>
+        <div style="width: 150px">Bubbles</div>
+    </div>
+    <div class="d-flex">
+        <div style="width: 150px">Fred</div>
+        <div style="width: 150px">Rivet</div>
+        <div style="width: 150px">Cosmo</div>
+    </div>
+    <hr>
+    <h4 class="text-secondary">D-inline-flex</h4>
+    <div class="d-inline-flex">
+        <div style="width: 150px">Rex</div>
+        <div style="width: 150px">Dolores</div>
+        <div style="width: 150px">Bubbles</div>
+    </div>
+    <div class="d-inline-flex">
+        <div style="width: 150px">Fred</div>
+        <div style="width: 150px">Rivet</div>
+        <div style="width: 150px">Cosmo</div>
+    </div>
+    <hr>
+    <h1 class="text-danger">Viewport Breakpoints</h1>
+    <h4 class="text-secondary">Show until Viewport</h4>
+    <div class="d-grid gap-2">
+        <span class="d-block d-sm-none bg-primary text-white">until sm</span>
+        <span class="d-block d-md-none bg-primary text-white">until md</span>
+        <span class="d-block d-lg-none bg-primary text-white">until lg</span>
+        <span class="d-block d-xl-none bg-primary text-white">until xl</span>
+        <span class="d-block d-xxl-none bg-primary text-white">until xxl</span>
+    </div>    
+    <hr>
+    <h4 class="text-secondary">Show after viewport</h4>
+    <div class="d-grid gap-2">
+        <span class="d-none d-sm-block bg-primary text-white">after sm</span>
+        <span class="d-none d-md-block bg-primary text-white">after md</span>
+        <span class="d-none d-lg-block bg-primary text-white">after lg</span>
+        <span class="d-none d-xl-block bg-primary text-white">after xl</span>
+        <span class="d-none d-xxl-block bg-primary text-white">after xxl</span>
+    </div>
+    <hr>
+    <h1 class="text-danger">Invisible</h1>
+    <div class="d-flex invisible">
+        <div class="bg-secondary text-white p-2">Rex</div>
+        <div class="bg-success text-white p-2">Dolores</div>
+        <div class="bg-secondary text-white p-2">Bubbles</div>
+        <div class="bg-secondary text-white p-2">Fred</div>
+        <div class="bg-secondary text-white p-2">Rivet</div>
+    </div>
+    <hr>
+    <h1 class="text-danger">Visible</h1>
+    <div class="d-flex visible">
+        <div class="bg-secondary text-white p-2">Rex</div>
+        <div class="bg-success text-white p-2">Dolores</div>
+        <div class="bg-secondary text-white p-2">Bubbles</div>
+        <div class="bg-secondary text-white p-2">Fred</div>
+        <div class="bg-secondary text-white p-2">Rivet</div>
+    </div>
+    <h1>Viewport BreakPoints</h1>
+    <div class="d-grid gap-2">
+        <span class="d-print-none bg-secondary text-white">Dont Print</span>
+        <span class="d-none d-print-block bg-scondary text-white">Print As Block</span>
+        <span class="d-none d-lg-block d-print-block bg-secondary text-white p-2">Show Large Print Block</span>
+    </div>
+    <h1 class="text-danger">Positioning</h1>
+    <div class="d-grid gap-2 bg-dark" style="padding: 10px">
+        <div class="position-sticky top-0 start-0 bg-secondary text-white p-2" style="height: 100px;">Rex</div>
+        <div class="position-absolute top-0 start-0 bg-secondary text-white p-2" style="height: 100px;">Dolores</div>
+        <div class="position-static top-0 start-0 bg-secondary text-white p-2" style="height: 100px;">Bubbles</div>
+        <div class="position-fixed top-0 start-0 bg-secondary text-white p-2" style="height: 100px;">Fred</div>
+        <div class="position-relative top-0 start-0 bg-secondary text-white p-2" style="height: 100px;">Rivet</div>
+    </div>
+    <hr>
+    <div class="d-grid gap-2 bg-dark" style="padding: 20px">
+        <div class="bg-secondary text-white p-2" style="height: 100px">Rex</div>
+        <div class="bg-secondary text-white p-2" style="height: 100px">Dolores</div>
+        <div class="bg-secondary text-white p-2" style="height: 100px">Bubbles</div>
+    </div>
+    </div>
+    </body>
+    </html>

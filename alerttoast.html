@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert,Toast,Modal,Collapse</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Alerts</h1>
+    <h4 class="text-secondary">Simple Alert</h4>
+    <div class="alert alert-primary" role="alert">Thanks for signing up for our Androis & Automation Mailing list! You're all set</div>
+    <hr>
+    <h4 class="text-secondary">Alerts with heading & Link</h4>
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Whoa!</h4>
+        <p>Thats one is a crazy password you have there.But its not secure enough<a href="#" class="alert-link" create a new password></a></p>
+    </div>
+    <h4 class="text-secondary">Dismissible alert</h4>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        remember to <strong>bookmark this page</strong> and check back regularly for new contraptions and apparatus for.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+    <hr>
+    <h1>Basic Toast</h1>
+    <button type="button" class="btn btn-danger" id="basictoastbtn">Join Us</button>
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="basictoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-primary texxt-light">
+                <h5 class="my-0">Join Our Company</h5>
+            </div>
+            <div class="toast-body">
+                <strong>Fly, Robot Fly. Whether as rescue robot or flying spy, </strong>this micro-aerial vehicle could change how we look at the common housefly.
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h1>Toast Options</h1>
+    <h4 class="text-secondary">basic toast</h4>
+    <button type="button" class="btn btn-primary" id="basictoastbtn">Join us</button>
+    <button type="button" class="btn btn-info text-white" id="infotoastbtn">Info</button>
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="basictoast" class="toast-hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+            <div class="toast-header bg-primary text-light d-fleex justify-content-between">
+                <h5 class="my-0">Join Our Company</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="close"></button>
+            </div>
+            <div id="toast-body">
+                <strong>Fly, Robot Fly. Whether as rescue robot or flying spy, </strong>this micro-aerial vehicle could change how we look at the common housefly.
+            </div>
+            <div id="infotoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-animation="false" data-bs-delay="2000"></div>
+            <div  class="toast-body bg-info text-info text-light d-flex d-flex justify-content-between">
+                <p class="mb-0">The drone changes the shape of its wing and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when flying ...</p>
+            <button type="button" class="btn-close btn-close-white ms-3" data-bs-dismiss="toast" aria-label="close"></button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h1>Basic Modal</h1>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="examplemodal" class="modal fade" tabindex="-1"></button>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="model-title">Success</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+        </div>
+        <div class="modal-body">
+            <p>The drone changes the shape of its wing and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when flying ...</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    <hr>
+    <h1>Modal Options</h1>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#centeredmodal">Centered</button>
+    <div id="centeredmodal" class="modal" tabindex="-1">
+        <div class="modal-dailog modal-dailog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Centered</h5>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>The drone changes the shape of its wing and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when flying ...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button> 
+                </div>
+            </div>
+        </div>
+    </div> 
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#centeredmodal">Sized Modal</button>   
+    <div id="sizedmodal" class="modal" tabindex="-1">
+        <div class="modal-dailog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sized Modal</h5>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>The drone changes the shape of its wing and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when flying ...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button> 
+                </div>
+            </div>
+        </div>
+    </div>  
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#centeredmodal">Full Screen Modal</button> 
+    <div id="fullscreenmodal" class="modal" tabindex="-1">
+        <div class="modal-dailog modal-fullscreen-lg-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Full Screen Modal</h5>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>The drone changes the shape of its wing and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when flying ...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h1>Collapse</h1>
+    <h4 class="text-secondary">Single Collapse</h4>
+    <div class="d-flex">
+        <div>
+            <a class="btn btn-primary" 
+                data-bs-toggle="collapse" 
+                href="#productexample" 
+                role="button"
+                aria-expanded="false"
+                aria-controls="productexample"> href
+            </a>
+        </div>
+        <div class="ms-3">
+            <button class="btn btn-info text-white" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="expertsexample"
+            aria-expanded="false"
+            aria-controls="expertsexample">data-bs-target</button>
+        </div>
+        <hr>
+        <br>
+        <h4 class="text-secondary">Multiple Collapse</h4>
+        <div class="d-flex">
+        <div>
+            <a class="btn btn-primary" 
+                data-bs-toggle="collapse" 
+                href="multi-collapse" 
+                role="button"
+                aria-expanded="false"
+                aria-controls="productexample"> href
+            </a>
+        </div>
+        <div class="ms-3">
+            <button class="btn btn-info text-white" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="expertsexample"
+            aria-expanded="false"
+            aria-controls="expertsexample">data-bs-target</button>
+        </div>
+        <hr>
+        <div class="collapse multi-collapse" id="productexample">
+            <strong>The drone changes the shape of its wing </strong> and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when flying ...</p>
+        </div>
+    </div>
+</body>
+</html>

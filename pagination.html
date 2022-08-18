@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination,Progress,Spinner,Badges & Breadcrumbs</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Pagination</h1>
+    <h4 class="text-secondary">Pagination-sm</h4>
+    <nav aria-label="robot-navigation">
+        <ul class="pagination pagination-sm">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#"></a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a> </li>
+        </ul>
+    </nav>
+    <hr>
+    <h4 class="text-success">Pagination</h4>
+    <nav aria-label="robot-navigation">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link text-success" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link bg-success" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+            <li class="page-item"><a class="page-link text-success" href="#">Next</a> </li>
+        </ul>
+    </nav>
+    <hr>
+    <h4 class="text-secondary">Pagination-lg</h4>
+    <nav aria-label="robot-navigation">
+        <ul class="pagination pagination-lg">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#"></a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a> </li>
+        </ul>
+    </nav>
+    <hr>
+    <h1>Progress Bar</h1>
+    <h4 class="text-secondary">Basic</h4>
+    <div class="progress">
+        <div class="progress-bar w-25 bg-success" role="progress-bar"
+        aria-value now="25"
+        aria-value min="0"
+        aria-value max="100">Dolores</div>
+    </div>
+    <hr>
+    <h4 class="text-secondary">Multiple Progress Bars</h4>
+    <div class="progress" style="height: 40px">
+        <div class="progress-bar w-25 bg-danger"
+        role="progress-bar"
+        aria-value now="25"
+        aria-value min="0"
+        aria-value max="100">Dolores</div>
+        <div class="progress-bar w-25 bg-success"
+        role="progress-bar"
+        aria-value now="25"
+        aria-value min="0"
+        aria-value max="100">Dolores</div>
+    </div>
+    <hr>
+    <h4 class="text-secondary">Stripped Progress Bar</h4>
+    <div class="progress" style="height: 40px">
+        <div class="progress-bar progress-bar-stripped w-75 bg-warning text-white"
+        role="progress-bar"
+        aria-value now="58"
+        aria-value min="0"
+        aria-value max="100">Dolores</div>
+    </div>
+    <h4 class="text-secondary">Animated Progress Bar</h4>
+    <div class="progress" style="height: 40px">
+        <div class="progress-bar progress-bar-stripped progress-bar-animated bg-danger text-white" style="width: 90%"
+        role="progress-bar"
+        aria-value now="90"
+        aria-value min="0"
+        aria-value max="100">Dolores</div>
+    </div>
+    <hr>
+    <h1>Progress Bar</h1>
+    <h4 class="text-secondary">Basic</h4>
+    <div class="spinner-border text-info">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <hr>
+    <h4 class="text-secondary">Growing Spinner</h4>
+    <div class="d-flex justify-content-center">
+        <div class="spinner-grow text-danger d-flex justify-content-center align-items-center" role="status"></div>
+    </div>
+        <i class="bi bi-heart-fill text-warning"></i>
+        <span class="visually-hidden">Loading...</span>
+    <hr>
+    <h1>Badges</h1>
+    <h4 class="text-secondary">Badges</h4>
+    <div class="fs-5">Bubbles<span class="badge bg-primary">1</span> </div>
+    <hr>
+    <h4 class="text-secondary">Runded-Pill</h4>
+    <div class="fs-3 fw-bold">Fred<span class="badge rounded-pill bg-danger text-warning"><i class="bi bi-heart-fill"></i> </span> </div>
+    <hr>
+    <h4>Breadcrumbs</h4>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Bubbles</li>
+            <li class="breadcrumb-item">Dolores</li>
+            <li class="breadcrumb-item">Fred</li>
+        </ol>
+    </nav>
+    <hr>
+    <h4 class="text-secondary"> Custom Breadcrumbs</h4>
+    <nav style="--bs-breadcrumb-divider:1" aria-label="breadcrumb">
+        <ol class="breadcrumbs">
+            <li class="breadcrumb-item active" aria-current="page">Bubbles</li>
+            <li class="breadcrumb-item">Dolores</li>
+            <li class="breadcrumb-item">Fred</li>
+            <li class="breadcrumb-item">Cosmo</li>
+            <li class="breadcrumb-item">Rivet</li>
+        </ol>
+    </nav>
+</body>
+</html>

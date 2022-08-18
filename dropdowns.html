@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert,Toast,Modal,Collapse</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Dropdowns</h1>
+    <h4 class="text-secondary">Dropdowns</h4>
+    <span class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" 
+        type="button" id="dropdownmicroprocessor" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false">Button dropdown</button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownmicroprocessor">
+            <li><a class="dropdown-item" href="#"> Micro Controller </a> </li>
+            <li><a class="dropdown-item" href="#"> Embedded Processor </a> </li>
+            <li><a class="dropdown-item" href="#"> DSP </a> </li>
+            <li><a class="dropdown-item" href="#"> Media Processor </a> </li>
+        </ul>
+    </span>
+    <hr>
+    <div class="dropdown">
+        <a class="btn btn-info dropdown-toggle"
+        type="button" id="dropdownmicroprocessor"
+        data-bs-toggle="dropdown"
+        aria-expected="false">Anchor Trigger</a>
+        <ul class="dropdown" aria-labelledby="dropdownmicroprocessor">
+            <li> <a class="dropdown-item" href="#">Micro Controller</a> </li>
+            <li><a class="dropdown-item" href="#"> Embedded Processor</a> </li>
+            <li><a class="dropdown-item" href="#"> D S P </a> </li>
+            <li><a class="dropdown-item" href="#"> Media Controller</a> </li>
+        </ul>
+    </div>
+    <hr>
+    <h1>Dropdown Button Groups</h1>
+    <div class="btn-group">
+        <button type="button" class="btn btn-success">Action</button>
+        <a class="btn btn-success dropdown-toggle dropdown-toggle-split" 
+        type="button" id="dropdownmicroprocessor" 
+        data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <span class="visibility-hidden">Button Groups</span></a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownmicroprocessor">
+            <li><a class="dropdown-item" href="#">Micro Controller</a> </li>
+            <li><a class="dropdown-item" href="#">Embedded Processor</a> </li>
+            <li><a class="dropdown-item" href="#"> D S P</a> </li>
+            <li><a class="dropdown-item" href="#">Media Processor</a> </li>
+        </ul>
+    </div>
+    <hr>
+    <h1>Dropdown Options</h1>
+    <h4 class="text-secondary">Responsive Alignment</h4>
+    <span class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" 
+        type="button" id="dropdownmicroprocessortrigger" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false">Alignment with container on extremely long menu</button>
+        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownmicroprocessortrigger">
+            <li><a class="dropdown-item" href="#"> Micro Controller </a> </li>
+            <li><a class="dropdown-item" href="#"> Embedded Processor </a> </li>
+            <li><a class="dropdown-item" href="#"> DSP </a> </li>
+            <li><a class="dropdown-item" href="#"> Media Processor </a> </li>
+        </ul>
+    </span>
+    <hr>
+    <h4 class="text-secondary">DropEnd</h4>
+    <div class="dropend mb-4 w-100 d-flex-left align-item-start">
+        <button class="btn btn-danger dropdown-toggle ms-auto" 
+        type="button" id="dropendmicroprocessortrigger" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false">Alignment with container on extremely long menu</button>
+        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownmicroprocessortrigger">
+            <li><a class="dropdown-item" href="#"> Micro Controller </a> </li>
+            <li><a class="dropdown-item" href="#"> Embedded Processor </a> </li>
+            <li><a class="dropdown-item" href="#"> DSP </a> </li>
+            <li><a class="dropdown-item" href="#"> Media Processor </a> </li>
+        </ul>
+    </div>>
+    <hr>
+    <h4 class="text-secondary">Drop Strat</h4>
+    <div class="dropstart mt-4 w-100 d-flex align-item-end">
+        <button class="btn btn-secondary dropdown-toggle ms-auto" 
+        type="button" id="dropdownmicroprocessortrigger" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false">Alignment with container on extremely long menu</button>
+        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownmicroprocessortrigger">
+            <li><a class="dropdown-item" href="#"> Micro Controller </a> </li>
+            <li><a class="dropdown-item" href="#"> Embedded Processor </a> </li>
+            <li><a class="dropdown-item" href="#"> DSP </a> </li>
+            <li><a class="dropdown-item" href="#"> Media Processor </a> </li>
+        </ul>
+    </div>
+    <hr>
+    <h4 class="text-secondary">Drop up</h4>
+    <div class="dropup mt-4 w-100 d-flex align-item-end">
+        <button class="btn btn-secondary dropdown-toggle" 
+        type="button" id="dropdownmicroprocessortrigger" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false">Alignment with container on extremely long menu</button>
+        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownmicroprocessortrigger">
+            <li><a class="dropdown-item" href="#"> Micro Controller </a> </li>
+            <li><a class="dropdown-item" href="#"> Embedded Processor </a> </li>
+            <li><a class="dropdown-item" href="#"> DSP </a> </li>
+            <li><a class="dropdown-item" href="#"> Media Processor </a> </li>
+        </ul>
+    </div>
+    <h4 class="text-secondary">Dark Dropdown</h4>
+    <span class="dark-dropdown mt-4 w-100 d-flex align-item-end">
+        <button class="btn btn-secondary dropdown-toggle ms-auto" 
+        type="button" id="dropdownmicroprocessortrigger" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false">Alignment with container on extremely long menu</button>
+        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownmicroprocessortrigger">
+            <li><a class="dropdown-item" href="#"> Micro Controller </a> </li>
+            <li><a class="dropdown-item" href="#"> Embedded Processor </a> </li>
+            <li><a class="dropdown-item" href="#"> DSP </a> </li>
+            <li><a class="dropdown-item" href="#"> Media Processor </a> </li>
+        </ul>
+    </span>
+    <hr>
+    <h1>Dropdown Content</h1>
+    <span class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" 
+        type="button" id="dropdownmicroprocessortrigger" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false">Dropdown Content</button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownmicroprocessortrigger">
+            <li><div class="dropdown-header bg-dark"> Dropdown Header </div> </li>
+            <li><a class="dropdown-item bg-dark text-white" href="#"> Micro Controller </a> </li>
+            <li><a class="dropdown-item disabled bg-dark" href="#" tabindex="-1" aria-disabled="true"> Embedded Processor </a> </li>
+            <li><div class="dropdown-item p-4 text-white bg-dark"> The drone changes the shape of its wing and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when </a> </li>
+            
+            <li> <hr class="dropdown-divider"> </li>
+            <li><a class="dropdown-item" href="#"> D S P </a> </li>
+            <li> <a class="dropdown-item active" href="#" aria-current="true">Media Processor</a> </li>
+        </ul>
+    </span>
+    <hr>
+    <div class="container mt-4">
+        <h1>Tooltips</h1>
+        <div class="d-inline-flex flex-column gap-3">
+            <button type="button" class="btn btn-secondary d-inline-block"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="top">Top</button>
+            <button type="button" class="btn btn-secondary d-inline-block"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="top">Bottom</button>
+        </div>
+    </div>
+    <hr>
+    <div class="container mt-4">
+        <h1>Popover</h1>
+        <div class="d-inline-flex flex-column gap-3">
+        <button type="button" class="btn btn-secondary"
+            data-bs-toggle="popover"
+            data-bs-contentt="top popover"
+            title="headline"> Popover on Top</button>
+            <button type="button" class="btn btn-secondary d-inline-block"
+            data-bs-toggle="popover"
+            data-bs-content="bottom popover"
+            title="headline">Bottom</button>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <h1 class="mt-4 mb-2">Scrollspy</h1>
+        <nav class="nav nav-pills" id="robotnav">
+            <a href="#dolores" class="nav-link active">Dolores</a>
+            <a href="#bubbles" class="nav-link" aria-current="page" href="#">Bubbles</a>
+            <a href="#cosmo" class="nav-link">Cosmo</a>
+        </nav>
+        <h4 id="dolores">Dolores</h4>
+        <div class="position-relative mt-3"
+            data-bs-spy="scroll" data-bs-offset="0"
+            tabindex="0" style="height: 400px; overflow: scroll">
+        <p>A flood is an overflow of water that submerges land that is usually dry. In the sense of "flowing water", the word may also be applied to the inflow of the tide. Floods are an area of study of the discipline hydrology and are of significant concern in agriculture, civil engineering and public healthFly, Robot Fly. Whether as rescue robot or flying spy, this micro-aerial vehicle could change how we look at the common hous</p>
+        <p>The drone changes the shape of its wing and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when flying .</p>
+        <p>RC Hand Inductive Flying Robot Aircraft Recharging Infrared Induction Ant stress Toy Kids Flash Light up Flying Toy Features: Intelligent sensor aircraft, ...</p>
+        <p>Flooding is an overflowing of water onto land that is normally dry. Floods can happen during heavy rains, when ocean waves come on shore, when snow melts quickly, or when dams or levees break. Damaging flooding may happen with only a few inches of water, or it may cover a house to the rooftop. Floods can occur within minutes or over a long period, and may last days, weeks, or longer. Floods are the most common and widespread of all weather-related natural disasters.
+
+            Flash floods are the most dangerous kind of floods, because they combine the destructive power of a flood with incredible speed. Flash floods occur when heavy rainfall exceeds the ability of the ground to absorb it. They also occur when water fills normally dry creeks or streams or enough water accumulates for streams to overtop their banks, causing rapid rises of water in a short amount of time. They can happen within minutes of the causative rainfall, limiting the time available to warn and protect the public.Find Fly robot stock images in HD and millions of other royalty-free stock photos, illustrations and vectors in the Shutterstock collection</p>
+        </div>
+        <h4 id="bubbles">Bubbles</h4>
+        <div class="position-relative mt-3"
+            data-bs-spy="scroll" data-bs-offset="0"
+            tabindex="0" style="height: 400px; overflow: scroll">
+        <p>Fly, Robot Fly. Whether as rescue robot or flying spy, this micro-aerial vehicle could change how we look at the common hous</p>
+        <p>Flooding is an overflowing of water onto land that is normally dry. Floods can happen during heavy rains, when ocean waves come on shore, when snow melts quickly, or when dams or levees break. Damaging flooding may happen with only a few inches of water, or it may cover a house to the rooftop. Floods can occur within minutes or over a long period, and may last days, weeks, or longer. Floods are the most common and widespread of all weather-related natural disasters.
+
+            Flash floods are the most dangerous kind of floods, because they combine the destructive power of a flood with incredible speed. Flash floods occur when heavy rainfall exceeds the ability of the ground to absorb it. They also occur when water fills normally dry creeks or streams or enough water accumulates for streams to overtop their banks, causing rapid rises of water in a short amount of time. They can happen within minutes of the causative rainfall, limiting the time available to warn and protect the public.The drone changes the shape of its wing and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when flying .</p>
+        <p>A flood is an overflow of water that submerges land that is usually dry. Floods are an area of study in the discipline of hydrology. They are the most common and widespread natural severe weather event. Floods can look very different because flooding covers anything from a few inches of water to several feet.A flood is an overflow of water that submerges land that is usually dry. Floods are an area of study in the discipline of hydrology. They are the most common and widespread natural severe weather event. Floods can look very different because flooding covers anything from a few inches of water to several feet.RC Hand Inductive Flying Robot Aircraft Recharging Infrared Induction Ant stress Toy Kids Flash Light up Flying Toy Features: Intelligent sensor aircraft, ...</p>
+        <p>A flood is an overflow of water that submerges land that is usually dry. In the sense of "flowing water", the word may also be applied to the inflow of the tide. Floods are an area of study of the discipline hydrology and are of significant concern in agriculture, civil engineering and public healthFind Fly robot stock images in HD and millions of other royalty-free stock photos, illustrations and vectors in the Shutterstock collection</p>
+        </div>
+        <h4 id="cosmo">Cosmo</h4>
+        <div class="position-relative mt-3"
+            data-bs-spy="scroll" data-bs-offset="0"
+            tabindex="0" style="height: 400px; overflow: scroll">
+        <p>Fly, Robot Fly. Whether as rescue robot or flying spy, this micro-aerial vehicle could change how we look at the common hous</p>
+        <p>Flooding is an overflowing of water onto land that is normally dry. Floods can happen during heavy rains, when ocean waves come on shore, when snow melts quickly, or when dams or levees break. Damaging flooding may happen with only a few inches of water, or it may cover a house to the rooftop. Floods can occur within minutes or over a long period, and may last days, weeks, or longer. Floods are the most common and widespread of all weather-related natural disasters.
+
+            Flash floods are the most dangerous kind of floods, because they combine the destructive power of a flood with incredible speed. Flash floods occur when heavy rainfall exceeds the ability of the ground to absorb it. They also occur when water fills normally dry creeks or streams or enough water accumulates for streams to overtop their banks, causing rapid rises of water in a short amount of time. They can happen within minutes of the causative rainfall, limiting the time available to warn and protect the public.A flood is an overflow of water that submerges land that is usually dry. In the sense of "flowing water", the word may also be applied to the inflow of the tide. Floods are an area of study of the discipline hydrology and are of significant concern in agriculture, civil engineering and public healthThe drone changes the shape of its wing and tail to change direction faster, fly slower without falling to the ground, and reduce air resistance when flying .</p>
+        <p>RC Hand Inductive Flying Robot Aircraft Recharging Infrared Induction Ant stress Toy Kids Flash Light up Flying Toy Features: Intelligent sensor aircraft, ...</p>
+        <p>A flood is an overflow of water that submerges land that is usually dry. Floods are an area of study in the discipline of hydrology. They are the most common and widespread natural severe weather event. Floods can look very different because flooding covers anything from a few inches of water to several feet.Find Fly robot stock images in HD and millions of other royalty-free stock photos, illustrations and vectors in the Shutterstock collection</p>
+        </div>
+    </div>
+</body>
+</html>
